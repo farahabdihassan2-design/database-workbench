@@ -1,0 +1,3 @@
+MongoDB was the easiest for storing the student record because of its flexible document model.
+We defined structure upfront in PostgreSQL by creating strict table schemas before inserting data.
+In contrast, MongoDB allowed us to insert records dynamically without any predefined schema.
