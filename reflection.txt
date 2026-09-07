@@ -1,3 +1,3 @@
-MongoDB was the easiest for storing the student record because of its flexible document model.
-We defined structure upfront in PostgreSQL by creating strict table schemas before inserting data.
-In contrast, MongoDB allowed us to insert records dynamically without any predefined schema.
+1. PostgreSQL requires a strict, predefined schema with rigid columns and data types before any student records can be inserted, ensuring strong relational integrity.
+2. Redis operates as a simple, fast in-memory key-value store without tables or schemas, ideal for quick lookups and caching with built-in TTL expiration.
+3. MongoDB utilizes a flexible, JSON-like document model that allows storing dynamic, nested student attributes without requiring upfront table definitions.

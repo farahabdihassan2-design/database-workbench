@@ -1,17 +1,15 @@
-=== PostgreSQL Lab Implementation ===
-
-Step 1: Install PostgreSQL (Docker Alternative)
-docker run --name pg -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres:16
-
-Step 2: Create Your First Table & Student Record
+ -- PostgreSQL Relational Database Setup
+SELECT version();
 CREATE DATABASE bootcamp;
-\c bootcamp
+\c bootcamp;
 
 CREATE TABLE students (
-    id SERIAL PRIMARY KEY,
-    name TEXT NOT NULL,
-    level TEXT
+    student_id VARCHAR(50) PRIMARY KEY,
+    name VARCHAR(100),
+    course VARCHAR(100)
 );
 
-INSERT INTO students (name, level) VALUES ('Alice', 'beginner');
+INSERT INTO students (student_id, name, course) 
+VALUES ('PLP-ILO-2601-1320', 'Hassan Abdi Farah', 'Software Engineering');
+
 SELECT * FROM students;
